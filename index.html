@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="أحمد ممدوح: إعداد وتصميم المتاجر الإلكترونية على Shopify وسلة وزد وإيزي أوردرز، مع إدارة الكتالوج ومحتوى SEO.">
+<title>أحمد ممدوح | متاجر إلكترونية تبيع</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#0b1424;--muted:#3d4b63;--line:#d3dce9;--acc:#ffb020;--acc-ink:#241800;--teal:#0b7f74;--navy:#0b1424;--navy2:#14233b;--on:#fff;--soft:#d5deed;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a111e;--card:#121e33;--ink:#f3f6fb;--muted:#c3cfe2;--line:#26375a;--teal:#38d6c6}}
+:root[data-theme="dark"]{--bg:#0a111e;--card:#121e33;--ink:#f3f6fb;--muted:#c3cfe2;--line:#26375a;--teal:#38d6c6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.9 "IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:30}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.w{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+h1,h2,h3{font-family:"Reem Kufi","IBM Plex Sans Arabic",Tahoma,sans-serif;margin:0;line-height:1.35}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);inset-inline:0;height:3px;z-index:31;background:linear-gradient(90deg,var(--acc),#ff6b6b,var(--teal));transform:scaleX(0);transform-origin:right}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,20,36,.92);backdrop-filter:blur(10px);color:var(--on)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.logo{font:700 22px "Reem Kufi",sans-serif}.logo i{font-style:normal;color:var(--acc)}
+.links{display:flex;gap:24px;font-size:15px;color:var(--soft)}.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font:600 16px inherit;font-family:inherit;border:2px solid var(--acc);cursor:pointer;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px -10px var(--acc)}
+.btn.p{background:var(--acc);color:var(--acc-ink)}
+.btn.g{color:#fff;border-color:#4a608a}
+.btn.p::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(120%);animation:shine 3.2s infinite}
+@keyframes shine{to{transform:translateX(-120%)}}
+.hero{background:var(--navy);color:var(--on);padding:70px 0 100px;position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;animation:fl 12s ease-in-out infinite alternate}
+.b1{width:380px;height:380px;background:#ff7a45;top:-120px;inset-inline-end:-80px}
+.b2{width:340px;height:340px;background:#0f9d8f;bottom:-140px;inset-inline-start:-60px;animation-delay:-5s}
+.b3{width:240px;height:240px;background:#7a5cff;top:40%;left:45%;opacity:.3;animation-delay:-8s}
+@keyframes fl{to{transform:translate(40px,-50px) scale(1.2)}}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;position:relative}
+h1{font-size:clamp(38px,6vw,66px);font-weight:700}
+h1 span{display:inline-block;opacity:0;transform:translateY(40px) rotate(3deg);animation:up .8s cubic-bezier(.2,.9,.3,1) forwards}
+h1 em{font-style:normal;color:var(--acc)}
+@keyframes up{to{opacity:1;transform:none}}
+.lead{color:var(--soft);font-size:19px;max-width:34em;margin:22px 0 30px;opacity:0;animation:up .8s 1s forwards}
+.acts{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:up .8s 1.2s forwards}
+.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;color:var(--soft);font-size:15px;opacity:0;animation:up .8s 1.4s forwards}
+.proof b{display:block;color:var(--acc);font:700 34px/1.2 "Reem Kufi",sans-serif}
+.mock{background:var(--navy2);border:1px solid #33497290;border-radius:18px;padding:14px;position:relative;box-shadow:0 30px 70px -30px #000;animation:bob 6s ease-in-out infinite;transition:transform .2s}
+@keyframes bob{50%{translate:0 -14px}}
+.bar{display:flex;gap:6px;margin-bottom:12px}.bar span{width:10px;height:10px;border-radius:50%;background:#4a608a}
+.url{margin-inline-start:10px;flex:1;background:#0b1424;border-radius:6px;font-size:11px;color:#a9bad4;padding:0 10px;direction:ltr;text-align:left;line-height:18px}
+.ban{height:96px;border-radius:10px;background:linear-gradient(120deg,var(--acc),#ff7a45,var(--acc));background-size:200% 100%;animation:gr 4s linear infinite;display:flex;align-items:center;padding:0 18px;font:700 24px "Reem Kufi",sans-serif;color:var(--acc-ink)}
+@keyframes gr{to{background-position:-200% 0}}
+.pr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.pr div{background:#0b1424;border-radius:10px;padding:8px;animation:bob 5s ease-in-out infinite}
+.pr div:nth-child(2){animation-delay:-1.5s}.pr div:nth-child(3){animation-delay:-3s}
+.pr em{display:block;aspect-ratio:1;border-radius:7px;background:linear-gradient(135deg,var(--c),#0b1424)}
+.pr small{display:block;margin-top:7px;height:7px;border-radius:4px;background:#33497a}
+.pr small+small{width:55%;background:var(--acc)}
+.toast{position:absolute;inset-inline-start:-18px;bottom:-24px;background:#fff;color:#0b1424;border-radius:12px;padding:10px 16px;font-size:14px;font-weight:600;box-shadow:0 14px 30px -10px #000;display:flex;gap:8px;align-items:center;animation:pop .6s 1.6s both cubic-bezier(.2,1.4,.4,1)}
+.toast::before{content:"";width:10px;height:10px;border-radius:50%;background:#1fbf6a;box-shadow:0 0 0 0 #1fbf6a;animation:pl 1.6s infinite}
+@keyframes pl{to{box-shadow:0 0 0 12px transparent}}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.9)}to{opacity:1;transform:none}}
+.strip{background:var(--navy2);color:var(--soft);padding:16px 0;overflow:hidden;border-top:1px solid #2a4066;direction:ltr}
+.mq{display:flex;gap:56px;width:max-content;animation:mq 22s linear infinite;font:600 17px "Reem Kufi",sans-serif}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:84px 0}
+.sh{max-width:40em;margin-bottom:36px}.sh h2{font-size:clamp(30px,4vw,42px)}.sh p{color:var(--muted);margin:10px 0 0;font-size:18px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sv{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.sv:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 18px 36px -22px #000}
+.sv:nth-child(1){grid-column:span 2;background:var(--navy);color:#fff;border-color:var(--navy)}
+.sv:nth-child(1) p{color:var(--soft)}
+.sv h3{font-size:21px;margin-bottom:6px}.sv p{margin:0;color:var(--muted);font-size:16px}
+.ic{width:46px;height:46px;border-radius:12px;background:rgba(255,176,32,.22);display:grid;place-items:center;margin-bottom:14px;font-size:22px;transition:transform .4s}
+.sv:hover .ic{transform:rotate(-12deg) scale(1.15)}
+.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pj{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.pj:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 22px 40px -22px #000}
+.th{height:132px;display:grid;place-items:center;background:linear-gradient(135deg,hsl(var(--h) 70% 52%),hsl(calc(var(--h) + 40) 65% 26%));color:#fff;font:700 27px "Reem Kufi",sans-serif;direction:ltr;transition:letter-spacing .3s}
+.pj:hover .th{letter-spacing:2px}
+.pb{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tg{align-self:flex-start;font-size:13px;font-weight:600;color:var(--teal);background:rgba(15,157,143,.16);padding:1px 11px;border-radius:999px}
+.pb h3{font-size:19px}.pb p{margin:0;color:var(--muted);font-size:15px;line-height:1.7;flex:1}
+.pb b{font-size:15px}.pj:hover .pb b{color:var(--teal)}
+.band{background:var(--navy);color:#fff}.band .sh p{color:var(--soft)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.st div{border-top:3px solid var(--acc);padding-top:14px;counter-increment:s}
+.st div::before{content:counter(s);font:700 38px "Reem Kufi",sans-serif;color:var(--acc)}
+.st h3{font-size:20px;margin:2px 0 4px}.st p{margin:0;color:var(--soft);font-size:16px}
+.ab{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.bx{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+.bx p{color:var(--muted);margin:0 0 12px}
+.ch{display:flex;flex-wrap:wrap;gap:8px}
+.ch span{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:4px 13px;font-size:15px;transition:.2s}
+.ch span:hover{background:var(--acc);color:var(--acc-ink);border-color:var(--acc);transform:translateY(-3px)}
+.ct{background:var(--navy);color:#fff;border-radius:24px;padding:50px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.ct h2{font-size:clamp(30px,4vw,42px)}.ct p{color:var(--soft)}
+form{display:grid;gap:12px}
+input,select,textarea{width:100%;font:inherit;padding:13px 15px;border-radius:12px;border:1px solid #4a608a;background:#0b1424;color:#fff}
+input::placeholder,textarea::placeholder{color:#a9bad4}
+select option{color:#000}textarea{min-height:90px;resize:vertical}
+footer{padding:28px 0 36px;color:var(--muted);font-size:15px;text-align:center}
+.wa{position:fixed;inset-inline-start:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px -6px #000;animation:pl2 2s infinite}
+.wa svg{width:30px;height:30px;fill:#fff}
+@keyframes pl2{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}100%{box-shadow:0 0 0 20px transparent}}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.2,.8,.3,1),transform .8s cubic-bezier(.2,.8,.3,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.hg,.ab,.ct{grid-template-columns:1fr}.wg,.st{grid-template-columns:repeat(2,1fr)}.links{display:none}.ct{padding:30px 22px}.toast{inset-inline-start:8px}}
+@media(max-width:640px){.sg,.wg,.st{grid-template-columns:1fr}.sv:nth-child(1){grid-column:auto}section{padding:56px 0}.hero{padding:44px 0 74px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}h1 span,.lead,.acts,.proof,.rv{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+<div id="pg"></div>
+<header><div class="w"><nav>
+<a class="logo" href="#top">أحمد <i>ممدوح</i></a>
+<div class="links"><a href="#services">الخدمات</a><a href="#work">أعمالي</a><a href="#process">طريقة الشغل</a><a href="#about">عني</a></div>
+<div style="display:flex;gap:8px;align-items:center"><button class="btn g" id="lt" type="button" style="padding:6px 16px" aria-label="Switch language">EN</button><a class="btn p" href="#contact">ابدأ مشروعك</a></div>
+</nav></div></header>
+<main id="top">
+<div class="hero"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+<div class="w hg">
+<div>
+<h1 id="h1">متجرك الإلكتروني لازم <em>يبيع</em>، مش بس يتشاف.</h1>
+<p class="lead">أنا أحمد ممدوح. بجهّز متاجر على Shopify وسلة وزد وإيزي أوردرز: تصميم واضح يشتغل على الموبايل، ومنتجات مترتبة، ومحتوى عربي يظهر في جوجل ويقنع العميل يطلب.</p>
+<div class="acts"><a class="btn p" href="https://wa.me/201012478290" target="_blank" rel="noopener">كلمني على واتساب</a><a class="btn g" href="#work">شوف أعمالي</a></div>
+<div class="proof"><span><b data-n="5">0</b>منصات اشتغلت عليها</span><span><b data-n="8">0</b>متاجر في أعمالي</span><span><b data-n="2">0</b>أسواق: مصر والسعودية</span></div>
+</div>
+<div class="mock" id="mock" aria-hidden="true">
+<div class="bar"><span></span><span></span><span></span><div class="url">your-store.com</div></div>
+<div class="ban">تخفيضات الموسم</div>
+<div class="pr"><div><em style="--c:#0f9d8f"></em><small></small><small></small></div><div><em style="--c:#ff7a45"></em><small></small><small></small></div><div><em style="--c:#7a5cff"></em><small></small><small></small></div></div>
+<div class="toast">طلب جديد وصل للتو</div>
+</div></div></div>
+<div class="strip" aria-hidden="true"><div class="mq" id="mq"></div></div>
+
+<section id="services"><div class="w">
+<div class="sh rv"><h2>اللي أقدر أعمله لمتجرك</h2><p>من أول فكرة المتجر لحد ما يبقى جاهز يستقبل أول عميل.</p></div>
+<div class="sg" id="sg"></div>
+</div></section>
+
+<section id="work" style="padding-top:0"><div class="w">
+<div class="sh rv"><h2>متاجر اشتغلت عليها</h2><p>اضغط على أي متجر وشوفه على الطبيعي.</p></div>
+<div class="wg" id="wg"></div>
+</div></section>
+
+<section id="process" class="band"><div class="w">
+<div class="sh rv"><h2>إزاي بنشتغل مع بعض</h2><p>خطوات واضحة من أول رسالة لحد ما المتجر يشتغل.</p></div>
+<div class="st">
+<div class="rv"><h3>نتكلم</h3><p>تحكيلي عن منتجاتك وجمهورك والمنصة اللي عايزها.</p></div>
+<div class="rv" style="--d:.12s"><h3>أجهّز</h3><p>أعمل هيكل المتجر والتصميم وأرفع المنتجات.</p></div>
+<div class="rv" style="--d:.24s"><h3>نراجع</h3><p>تشوف النتيجة ونعدّل لحد ما تبقى مرتاح.</p></div>
+<div class="rv" style="--d:.36s"><h3>نطلق</h3><p>أختبر الطلب والدفع والموبايل، وبعدها نفتح المتجر.</p></div>
+</div></div></section>
+
+<section id="about"><div class="w"><div class="ab">
+<div class="bx rv"><h2 style="font-size:30px;margin-bottom:12px">أنا أحمد ممدوح</h2>
+<p>بشتغل على التفاصيل اللي بتفرق في المتجر: ترتيب الأقسام، وشكل الثيم، وبيانات المنتج، وتجربة العميل من أول زيارة لحد الطلب.</p>
+<p>اشتغلت على Shopify وسلة وزد وإيزي أوردرز وكتالوج نون، وبكتب محتوى المنتجات بنفسي بالعربي والإنجليزي بما يناسب كل منتج وكل سوق.</p></div>
+<div class="bx rv" style="--d:.15s"><h3 style="margin-bottom:12px">مهاراتي</h3>
+<div class="ch"><span>إعداد المتاجر</span><span>تخصيص الثيمات</span><span>HTML</span><span>CSS</span><span>RTL</span><span>رفع المنتجات</span><span>إدارة الكتالوج</span><span>محتوى SEO</span><span>تصميم متجاوب</span><span>GTM</span><span>واتساب</span><span>CSV</span></div></div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="w"><div class="ct rv">
+<div><h2>جاهز نبدأ متجرك؟</h2><p>ابعتلي فكرتك في رسالة واتساب قصيرة، وهرد عليك بالخطوة الجاية.</p></div>
+<form id="f">
+<input id="n" placeholder="اسمك" aria-label="اسمك" autocomplete="name">
+<select id="t" aria-label="نوع الخدمة"><option>إعداد متجر جديد</option><option>تصميم وتخصيص متجر</option><option>رفع وإدارة منتجات</option><option>محتوى SEO</option><option>كتالوج نون</option></select>
+<textarea id="m" placeholder="احكيلي باختصار عن مشروعك" aria-label="تفاصيل المشروع"></textarea>
+<button class="btn p" type="submit" style="justify-content:center">ابعت على واتساب</button>
+</form></div></div></section>
+</main>
+<footer><div class="w">© أحمد ممدوح، متاجر إلكترونية وتطوير ويب</div></footer>
+<a class="wa" href="https://wa.me/201012478290" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/></svg></a>
+<script>
+var WA="201012478290";
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();
+var en=document.documentElement.lang=="en";var msg=en?"Hi Ahmed, I’m "+(n.value||"")+"\nService: "+(window.ENO?ENO[t.selectedIndex]:t.value)+"\n"+(m.value||""):"أهلاً أحمد، أنا "+(n.value||"")+"\nالخدمة: "+t.value+"\n"+(m.value||"");
+window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank","noopener")});
+var S=[["🛍️","إعداد المتجر من الصفر","هيكلة المتجر والصفحات والأقسام ورفع المنتجات وفحص كل حاجة قبل الإطلاق، علشان تبدأ بيع وانت مطمّن."],["🎨","تصميم وتخصيص الثيم","هيدر وبانرات وكروت منتجات بهوية تشبه براندك، وتتعرض مظبوطة على الموبايل وفي العربي RTL."],["📦","إدارة المنتجات والكتالوج","عناوين ووصف وصور وأسعار ومتغيرات وأكواد SKU مترتبة بشكل ثابت."],["🔎","محتوى SEO للمنتجات","عناوين وميتا ووصف منظّم وأسئلة شائعة بالعربي والإنجليزي، مكتوبة لكل منتج على حدة."],["🔗","ربط وإعدادات","واتساب وGoogle Tag Manager والدومين والاستضافة وحل مشاكل ربط الدفع."],["🗂️","كتالوج نون","مراجعة ملفات CSV وتصحيح أخطاء الرفع والـ variations وبيانات المنتجات."]];
+var P=[["https://menu-box.myshopify.com",330,"Menu Box","Shopify","منيو بوكس","متجر عناية وجمال بهوية أنثوية مرحة، وأقسام للعناية بالبشرة والشعر والجسم، ومحتوى منتجات بالعربي."],["https://modestie-sa.com",265,"Modestie","عبايات","مودستي","تسمية المنتجات ووصف عربي وإنجليزي ومحتوى SEO وبيانات كتالوج العبايات."],["https://beautylab.sa",15,"Beauty Lab","متجر إلكتروني","بيوتي لاب","متجر في مجال الجمال والعناية بالسعودية."],["https://tiqoo.net",190,"Tiqoo","متجر إلكتروني","تيكو","متجر إلكتروني ضمن أعمالي السابقة."],["https://wastyle.org",40,"WA Style","متجر إلكتروني","دبليو إيه ستايل","متجر أزياء وستايل ضمن أعمالي السابقة."],["https://joourii.myeasyorders.com",300,"Joourii","Easy Orders","جوري","متجر على Easy Orders بصفحات منتجات وتجربة طلب بسيطة."],["https://jamaliyah.store",340,"Jamaliyah","Easy Orders","جمالية","متجر على Easy Orders بتصميم مخصص وصفحات منتجات واضحة."],["https://viw2xd.zid.store",160,"Zid Store","Zid","متجر على زد","تجهيز المنتجات والصور والأسعار والأقسام والتطبيقات الأساسية واختبار ما قبل الإطلاق."]];
+document.getElementById("sg").innerHTML=S.map(function(s,i){return '<div class="sv rv" style="--d:'+(i%3)*.12+'s"><div class="ic">'+s[0]+'</div><h3>'+s[1]+'</h3><p>'+s[2]+'</p></div>'}).join("");
+document.getElementById("wg").innerHTML=P.map(function(p,i){return '<a class="pj rv" style="--d:'+(i%4)*.1+'s" href="'+p[0]+'" target="_blank" rel="noopener"><div class="th" style="--h:'+p[1]+'">'+p[2]+'</div><div class="pb"><span class="tg">'+p[3]+'</span><h3>'+p[4]+'</h3><p>'+p[5]+'</p><b>زيارة المتجر ←</b></div></a>'}).join("");
+var q=["Shopify","سلة Salla","زد Zid","Easy Orders","Noon"],h="";for(var i=0;i<8;i++)h+="<span>"+q[i%5]+"</span>";document.getElementById("mq").innerHTML=h;
+var H=document.getElementById("h1");(function w(nd){Array.prototype.slice.call(nd.childNodes).forEach(function(c){if(c.nodeType===3){var f=document.createDocumentFragment();c.nodeValue.split(/(\s+)/).forEach(function(x){if(!x.trim()){f.appendChild(document.createTextNode(x));return}var s=document.createElement("span");s.textContent=x;s.style.animationDelay=(.15+H.querySelectorAll("span").length*.1)+"s";f.appendChild(s);H.appendChild(document.createDocumentFragment())});nd.replaceChild(f,c)}else if(c.nodeName==="EM"){c.innerHTML="<span>"+c.textContent+"</span>";c.firstChild.style.animationDelay=(.15+H.querySelectorAll("span").length*.1)+"s"}})})(H);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+document.querySelectorAll("[data-n]").forEach(function(e){var t=+e.dataset.n,s=null;function st(ts){s=s||ts;var p=Math.min((ts-s)/1400,1);e.textContent=Math.round(t*p);if(p<1)requestAnimationFrame(st)}setTimeout(function(){requestAnimationFrame(st)},1500)});
+var pg=document.getElementById("pg");addEventListener("scroll",function(){var d=document.documentElement;pg.style.transform="scaleX("+(scrollY/(d.scrollHeight-innerHeight||1))+")"},{passive:true});
+var mk=document.getElementById("mock");if(matchMedia("(hover:hover)").matches)document.querySelector(".hero").addEventListener("mousemove",function(e){var x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;mk.style.transform="perspective(900px) rotateY("+x*-10+"deg) rotateX("+y*8+"deg)"});
+var ENO=["New store setup","Store design & customization","Product upload & management","SEO content","Noon catalog"];
+var EN={"أحمد":"Ahmed","ممدوح":"Mamdouh","الخدمات":"Services","أعمالي":"Work","طريقة الشغل":"Process","عني":"About","ابدأ مشروعك":"Start a project",
+"أنا أحمد ممدوح. بجهّز متاجر على Shopify وسلة وزد وإيزي أوردرز: تصميم واضح يشتغل على الموبايل، ومنتجات مترتبة، ومحتوى عربي يظهر في جوجل ويقنع العميل يطلب.":"I’m Ahmed Mamdouh. I set up stores on Shopify, Salla, Zid and Easy Orders: clear design that works on mobile, organized products, and Arabic content that ranks on Google and convinces customers to order.",
+"كلمني على واتساب":"Message me on WhatsApp","شوف أعمالي":"See my work","منصات اشتغلت عليها":"platforms I’ve worked on","متاجر في أعمالي":"stores in my work","أسواق: مصر والسعودية":"markets: Egypt & Saudi Arabia",
+"تخفيضات الموسم":"Season sale","طلب جديد وصل للتو":"New order just came in","سلة Salla":"Salla","زد Zid":"Zid",
+"اللي أقدر أعمله لمتجرك":"What I can do for your store","من أول فكرة المتجر لحد ما يبقى جاهز يستقبل أول عميل.":"From the first idea to a store that’s ready for its first customer.",
+"إعداد المتجر من الصفر":"Store setup from scratch","هيكلة المتجر والصفحات والأقسام ورفع المنتجات وفحص كل حاجة قبل الإطلاق، علشان تبدأ بيع وانت مطمّن.":"Store structure, pages, categories, product upload and a full check before launch, so you start selling with confidence.",
+"تصميم وتخصيص الثيم":"Theme design & customization","هيدر وبانرات وكروت منتجات بهوية تشبه براندك، وتتعرض مظبوطة على الموبايل وفي العربي RTL.":"Headers, banners and product cards that match your brand, displayed correctly on mobile and in Arabic RTL.",
+"إدارة المنتجات والكتالوج":"Product & catalog management","عناوين ووصف وصور وأسعار ومتغيرات وأكواد SKU مترتبة بشكل ثابت.":"Titles, descriptions, images, prices, variants and SKUs organized consistently.",
+"محتوى SEO للمنتجات":"Product SEO content","عناوين وميتا ووصف منظّم وأسئلة شائعة بالعربي والإنجليزي، مكتوبة لكل منتج على حدة.":"SEO titles, meta descriptions, structured copy and FAQs in Arabic and English, written for each product individually.",
+"ربط وإعدادات":"Integrations & configuration","واتساب وGoogle Tag Manager والدومين والاستضافة وحل مشاكل ربط الدفع.":"WhatsApp, Google Tag Manager, domain and hosting, and payment-integration troubleshooting.",
+"كتالوج نون":"Noon catalog","مراجعة ملفات CSV وتصحيح أخطاء الرفع والـ variations وبيانات المنتجات.":"Reviewing CSV files and fixing upload errors, variations and product data.",
+"متاجر اشتغلت عليها":"Stores I’ve worked on","اضغط على أي متجر وشوفه على الطبيعي.":"Click any store to see it live.","زيارة المتجر ←":"Visit store →","عبايات":"Abayas","متجر إلكتروني":"Online store",
+"منيو بوكس":"Menu Box","متجر عناية وجمال بهوية أنثوية مرحة، وأقسام للعناية بالبشرة والشعر والجسم، ومحتوى منتجات بالعربي.":"A beauty and personal-care store with a playful feminine identity, skin, hair and body categories, and Arabic product content.",
+"مودستي":"Modestie","تسمية المنتجات ووصف عربي وإنجليزي ومحتوى SEO وبيانات كتالوج العبايات.":"Product naming, Arabic and English descriptions, SEO content and abaya catalog data.",
+"بيوتي لاب":"Beauty Lab","متجر في مجال الجمال والعناية بالسعودية.":"A beauty and care store in Saudi Arabia.","تيكو":"Tiqoo","متجر إلكتروني ضمن أعمالي السابقة.":"An online store from my previous work.",
+"دبليو إيه ستايل":"WA Style","متجر أزياء وستايل ضمن أعمالي السابقة.":"A fashion and style store from my previous work.",
+"جوري":"Joourii","متجر على Easy Orders بصفحات منتجات وتجربة طلب بسيطة.":"An Easy Orders store with product pages and a simple ordering flow.",
+"جمالية":"Jamaliyah","متجر على Easy Orders بتصميم مخصص وصفحات منتجات واضحة.":"An Easy Orders store with custom styling and clear product pages.",
+"متجر على زد":"Zid store","تجهيز المنتجات والصور والأسعار والأقسام والتطبيقات الأساسية واختبار ما قبل الإطلاق.":"Products, images, pricing, categories, essential apps and pre-launch testing.",
+"إزاي بنشتغل مع بعض":"How we work together","خطوات واضحة من أول رسالة لحد ما المتجر يشتغل.":"Clear steps from the first message to a working store.",
+"نتكلم":"We talk","تحكيلي عن منتجاتك وجمهورك والمنصة اللي عايزها.":"Tell me about your products, audience and preferred platform.",
+"أجهّز":"I build","أعمل هيكل المتجر والتصميم وأرفع المنتجات.":"I set up the store structure and design, and upload your products.",
+"نراجع":"We review","تشوف النتيجة ونعدّل لحد ما تبقى مرتاح.":"You see the result and we adjust until you’re happy.",
+"نطلق":"We launch","أختبر الطلب والدفع والموبايل، وبعدها نفتح المتجر.":"I test ordering, payment and mobile, then we open the store.",
+"أنا أحمد ممدوح":"I’m Ahmed Mamdouh","بشتغل على التفاصيل اللي بتفرق في المتجر: ترتيب الأقسام، وشكل الثيم، وبيانات المنتج، وتجربة العميل من أول زيارة لحد الطلب.":"I work on the details that make a store perform: category structure, theme styling, product data, and the customer journey from first visit to order.",
+"اشتغلت على Shopify وسلة وزد وإيزي أوردرز وكتالوج نون، وبكتب محتوى المنتجات بنفسي بالعربي والإنجليزي بما يناسب كل منتج وكل سوق.":"I’ve worked on Shopify, Salla, Zid, Easy Orders and Noon catalogs, and I write product content myself in Arabic and English to suit each product and market.",
+"مهاراتي":"Skills","إعداد المتاجر":"Store setup","تخصيص الثيمات":"Theme customization","رفع المنتجات":"Product upload","إدارة الكتالوج":"Catalog management","محتوى SEO":"SEO content","تصميم متجاوب":"Responsive design","واتساب":"WhatsApp",
+"جاهز نبدأ متجرك؟":"Ready to start your store?","ابعتلي فكرتك في رسالة واتساب قصيرة، وهرد عليك بالخطوة الجاية.":"Send me your idea in a short WhatsApp message and I’ll reply with the next step.",
+"إعداد متجر جديد":"New store setup","تصميم وتخصيص متجر":"Store design & customization","رفع وإدارة منتجات":"Product upload & management","ابعت على واتساب":"Send on WhatsApp",
+"اسمك":"Your name","نوع الخدمة":"Service type","تفاصيل المشروع":"Project details","احكيلي باختصار عن مشروعك":"Briefly tell me about your project","© أحمد ممدوح، متاجر إلكترونية وتطوير ويب":"© Ahmed Mamdouh, e-commerce & web development"};
+var H_AR=H.innerHTML,H_EN=["Your","online","store","should","*sell*,","not","just","get","seen."];
+var TT={ar:document.title,en:"Ahmed Mamdouh | Online stores that sell"},MD=document.querySelector("meta[name=description]"),MA=MD.content,ME="Ahmed Mamdouh: e-commerce store setup and design on Shopify, Salla, Zid and Easy Orders, plus catalog management and SEO content.";
+var tn=[],at=[],tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),x;
+while(x=tw.nextNode()){if(x.parentNode.tagName==="SCRIPT"||H.contains(x))continue;var k=x.nodeValue.trim();if(EN[k])tn.push({n:x,ar:x.nodeValue,en:x.nodeValue.replace(k,EN[k])})}
+document.querySelectorAll("[placeholder],[aria-label]").forEach(function(e){["placeholder","aria-label"].forEach(function(a){var v=e.getAttribute(a);if(v&&EN[v])at.push({e:e,a:a,ar:v,en:EN[v]})})});
+function setLang(l){var en=l==="en",d=document.documentElement;d.lang=l;d.dir=en?"ltr":"rtl";
+tn.forEach(function(t){t.n.nodeValue=en?t.en:t.ar});at.forEach(function(t){t.e.setAttribute(t.a,en?t.en:t.ar)});
+if(en){H.innerHTML=H_EN.map(function(w,i){var s=w[0]=="*",tx=w.replace("*","").replace("*","");var sp='<span style="animation-delay:'+(i*.1)+'s">'+tx+'</span>';return s?"<em>"+sp+"</em>":sp}).join(" ")}else H.innerHTML=H_AR;
+document.title=TT[l];MD.content=en?ME:MA;document.getElementById("lt").textContent=en?"عربي":"EN";
+try{localStorage.setItem("lang",l)}catch(e){}}
+document.getElementById("lt").addEventListener("click",function(){setLang(document.documentElement.lang==="en"?"ar":"en")});
+try{if(localStorage.getItem("lang")==="en")setLang("en")}catch(e){}
+</script>
+</body>
+</html>
